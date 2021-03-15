@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+
+const english_txt = 'English texts for beginners to practice reading and comprehension online and for free. Practicing your comprehension of written English will both improve your vocabulary and understanding of grammar and word order. The texts below are designed to help you develop while giving you an instant evaluation of your progress.'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <section translate="no">
+        <h2>Tag com <code>translate="no"</code></h2>
+        {english_txt}
+      </section>
+      <section>
+        <h2>Tag sem <code>translate="no"</code></h2>
+        {english_txt}
+      </section>
+    </main>
   );
 }
 
